@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#1CAC78</color>
+    <color name="dark_green">#317F43</color>
+    <color name="blue">#1560BD</color>
+    <color name="light_blue">#2867C4</color>
+    <color name="button_lapis">#66B3FF</color>
+    <color name="non_selected">#808080</color>
+    <color name="gray">#E6E6E6</color>
+    <color name="night_dark_blue">#252850</color>
+    <color name="gold">#FFFFC226</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="red">#D95F69</color>
+</resources>

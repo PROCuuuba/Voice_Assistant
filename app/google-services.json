@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "43054670333",
+    "firebase_url": "https://kursach-e4d52-default-rtdb.firebaseio.com",
+    "project_id": "kursach-e4d52",
+    "storage_bucket": "kursach-e4d52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43054670333:android:d3732b21d1586ad0b4f994",
+        "android_client_info": {
+          "package_name": "com.example.kursach"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrxYy_UitaznDQkZNjAeKDlDHekY55QOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43054670333:android:2cc997360e2abcf7b4f994",
+        "android_client_info": {
+          "package_name": "com.example.voiceassistant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrxYy_UitaznDQkZNjAeKDlDHekY55QOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

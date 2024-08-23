@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="1dp"
+    android:background="@color/white"
+    android:layout_margin="16dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/dialogPhoneImageView"
+        android:src="@color/non_selected"
+        android:layout_width="4000dp"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialogPhoneImageView"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Фамилия: "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dialogClientSurnameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Фамилия"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:autoSizeTextType="uniform" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Имя: "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dialogClientNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Имя"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:autoSizeTextType="uniform" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отчество: "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dialogClientPatronymicEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Отчество"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:autoSizeTextType="uniform" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Номер телефона: "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dialogClientTelephoneNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Номер телефона"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:autoSizeTextType="uniform" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Проблема: "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dialogClientProblemEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Проблема"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:autoSizeTextType="uniform" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Дата: "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dialogClientDateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Дата"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:autoSizeTextType="uniform" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Модель: "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dialogClientModelEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Модель"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:autoSizeTextType="uniform" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Статус: "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
+
+            <Spinner
+                android:id="@+id/statusSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:entries="@array/status_array" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dialogClientModelEditText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="Удалить"
+                android:drawableStart="@color/blue"
+                android:drawablePadding="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/white"
+                android:background="@null"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/editButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dialogClientModelEditText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="Редактировать"
+                android:drawableStart="@color/blue"
+                android:drawablePadding="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/white"
+                android:background="@null"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

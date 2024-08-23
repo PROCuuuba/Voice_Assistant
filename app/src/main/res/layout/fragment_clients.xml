@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.ClientsFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/smallProfilePictureImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@color/non_selected"
+                android:layout_marginLeft="20dp"
+                app:shapeAppearanceOverlay="@style/roundedImageView"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onProfilePictureClicked" />
+
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edittext_rounded_background"
+                android:focusable="false"
+                android:inputType="textCapSentences"
+                app:queryHint="Поиск"
+                app:iconifiedByDefault="false"
+                app:searchHintIcon="@null"
+                app:queryBackground="@android:color/transparent"
+                app:searchIcon="@drawable/search_icon"
+                app:closeIcon="@drawable/cross_icon" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ListViewRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <ListView
+                    android:id="@+id/clientsListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="606dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="16dp"
+        app:srcCompat="@drawable/add_client_icon"
+        app:backgroundTint="@color/white"
+        app:fabSize="auto"
+        android:scaleType="center" />
+
+</FrameLayout>

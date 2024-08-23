@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/phoneImageView"
+        android:src="@color/non_selected"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+    <TextView
+        android:id="@+id/clientSurnameTextView"
+        android:layout_toRightOf="@+id/phoneImageView"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/clientNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/clientSurnameTextView"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/clientPatronymicTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/clientNameTextView"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/clientTelephoneNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clientPatronymicTextView"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/phoneImageView"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/clientProblemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clientTelephoneNumberTextView"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/phoneImageView"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/clientDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clientProblemTextView"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/phoneImageView"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/clientModelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clientDateTextView"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/phoneImageView"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:autoSizeTextType="uniform" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clientModelTextView"
+        android:layout_toRightOf="@+id/phoneImageView"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/clientStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:autoSizeTextType="uniform" />
+
+        <ImageView
+            android:id="@+id/orderStatusIndicator"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle_yellow" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
