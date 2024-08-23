@@ -97,7 +97,7 @@ public class ChatGPTFragment extends Fragment {
         RequestBody body = okhttp3.RequestBody.create(jsonBody.toString(), okhttp3.MediaType.parse("application/json"));
         Request question = new Request.Builder()
                 .url("https://api.openai.com/v1/completions")
-                .header("Authorization", "Bearer sk-proj-GgemDllO9ZkdqWwXptNHT3BlbkFJgZCknubMYMZALljwnAMB")
+
                 .post(body)
                 .build();
 
